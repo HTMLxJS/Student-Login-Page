@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <!-- Link to the CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" id="studentLoginForm">
+            <h2>Student Login</h2>
+            <div class="input-group">
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" name="studentId" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="classSelect">Select Class:</label>
+                <select id="classSelect" name="classSelect" required>
+                    <option value="">-- Choose a class --</option>
+                    <option value="5">5th Grade</option>
+                    <option value="6">6th Grade</option>
+                    <option value="7">7th Grade</option>
+                    <option value="8">8th Grade</option>
+                </select>
+            </div>
+            <button type="submit">Login</button>
+            <div id="message" class="message"></div>
+        </form>
+    </div>
+    <!-- Link to the JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
